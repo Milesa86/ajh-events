@@ -1,0 +1,86 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    color: #999;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.game-board {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    gap: 15px 15px;
+}
+
+.cell {
+    border: 1px solid rgb(99, 92, 91);
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.results {
+    display: flex;
+    margin-top: 30px;
+    gap: 50px;
+    font-weight: bold;
+    color: rgb(121, 3, 3);
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    
+}
+
+.modal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #ebe5e5;
+    padding: 100px;
+    border: 1px #000;
+    left: 40%;
+    top: 20%;
+}
+
+.modal-message {
+    font-size: 32px;
+    font-weight: 500;
+    color: #5f6368;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    background: orange;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin: 0 auto;
+}
